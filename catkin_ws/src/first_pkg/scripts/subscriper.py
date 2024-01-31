@@ -3,8 +3,9 @@
 import rospy
 from std_msgs.msg import String, Int16
 
-def 
-
+def my_callack(my_string):
+    rospy.loginfo("I heard %s", my_string.data)
+    
 def listner():
  
     rospy.init_node('talker', anonymous=True)
