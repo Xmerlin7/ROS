@@ -1,1 +1,4 @@
-<lau
+<launch>
+    <node name = "turtlesim_sim" pkg = "turtlesim" type = "turtlesim_node"/>
+    <node name = "turtlesim_key" pkg = "turtlesim" type = "turtlesim_teleop_key"/>
+</launch>
