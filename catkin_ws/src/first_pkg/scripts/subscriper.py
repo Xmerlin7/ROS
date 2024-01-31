@@ -10,6 +10,7 @@ def listner():
 
     rospy.init_node('listner', anonymous=True)
     rospy.Subscriber('chatter', String, my_callack)
+    rospy.spin()
 
 if __name__ == '__main__':
     try:
