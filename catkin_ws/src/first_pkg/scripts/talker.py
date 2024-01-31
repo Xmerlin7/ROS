@@ -4,5 +4,6 @@ import rospy
 from std_msgs.msg import String
 
 def talker():
-    pub = rospy.Publisher
+    pub = rospy.Publisher('chatter', String, queue_size=10)
+    
 
