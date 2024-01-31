@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "")
+    set(CMAKE_INSTALL_CONFIG_NAME "Release")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -132,6 +132,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/seif/My_ROS/ROS/catkin_ws/build/gtest/cmake_install.cmake")
   include("/home/seif/My_ROS/ROS/catkin_ws/build/first_pkg/cmake_install.cmake")
+  include("/home/seif/My_ROS/ROS/catkin_ws/build/pioneer_visualize/cmake_install.cmake")
 
 endif()
 

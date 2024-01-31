@@ -1,2 +1,2 @@
-first_pkg
+first_pkg:pioneer_visualize
 -DCATKIN_DEVEL_PREFIX=/home/seif/My_ROS/ROS/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/seif/My_ROS/ROS/catkin_ws/install -G Unix Makefiles

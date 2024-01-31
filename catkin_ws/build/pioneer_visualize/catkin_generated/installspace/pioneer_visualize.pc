@@ -1,0 +1,8 @@
+prefix=/home/seif/My_ROS/ROS/catkin_ws/install
+
+Name: pioneer_visualize
+Description: Description of pioneer_visualize
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

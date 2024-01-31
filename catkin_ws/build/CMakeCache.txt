@@ -47,7 +47,7 @@ CMAKE_AR:FILEPATH=/usr/bin/ar
 
 //Choose the type of build, options are: None Debug Release RelWithDebInfo
 // MinSizeRel ...
-CMAKE_BUILD_TYPE:STRING=
+CMAKE_BUILD_TYPE:STRING=Release
 
 //Enable/Disable color output during build.
 CMAKE_COLOR_MAKEFILE:BOOL=ON
@@ -382,6 +382,9 @@ UBUNTU:BOOL=TRUE
 //LSB Distrib - codename tag
 UBUNTU_FOCAL:BOOL=TRUE
 
+//No help, variable specified on the command line.
+VISP_DIR:UNINITIALIZED=~/software/visp/visp-build
+
 //Path to a file.
 _gmock_INCLUDES:FILEPATH=/usr/src/googletest/googlemock/include/gmock/gmock.h
 
@@ -405,6 +408,12 @@ first_pkg_BINARY_DIR:STATIC=/home/seif/My_ROS/ROS/catkin_ws/build/first_pkg
 
 //Value Computed by CMake
 first_pkg_SOURCE_DIR:STATIC=/home/seif/My_ROS/ROS/catkin_ws/src/first_pkg
+
+//The directory containing a CMake configuration file for geomery_msgs.
+geomery_msgs_DIR:PATH=geomery_msgs_DIR-NOTFOUND
+
+//The directory containing a CMake configuration file for geometry_msgs.
+geometry_msgs_DIR:PATH=/opt/ros/noetic/share/geometry_msgs/cmake
 
 //Value Computed by CMake
 gmock_BINARY_DIR:STATIC=/home/seif/My_ROS/ROS/catkin_ws/build/gtest/googlemock
@@ -457,6 +466,12 @@ lib:FILEPATH=/opt/ros/noetic/lib/libxmlrpcpp.so
 
 //The directory containing a CMake configuration file for message_runtime.
 message_runtime_DIR:PATH=/opt/ros/noetic/share/message_runtime/cmake
+
+//Value Computed by CMake
+pioneer_visualize_BINARY_DIR:STATIC=/home/seif/My_ROS/ROS/catkin_ws/build/pioneer_visualize
+
+//Value Computed by CMake
+pioneer_visualize_SOURCE_DIR:STATIC=/home/seif/My_ROS/ROS/catkin_ws/src/pioneer_visualize
 
 //The directory containing a CMake configuration file for rosconsole.
 rosconsole_DIR:PATH=/opt/ros/noetic/share/rosconsole/cmake
@@ -633,7 +648,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=6
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
