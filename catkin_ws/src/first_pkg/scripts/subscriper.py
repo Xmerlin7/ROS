@@ -7,8 +7,8 @@ def my_callack(my_string):
     rospy.loginfo("I heard %s", my_string.data)
     
 def listner():
- 
-    rospy.init_node('talker', anonymous=True)
+
+    rospy.init_node('listner', anonymous=True)
     rospy.Subscriber('chatter', String, my_callack)
 
 if __name__ == '__main__':
