@@ -406,8 +406,7 @@ cpp_common_DIR:PATH=/opt/ros/noetic/share/cpp_common/cmake
 //Value Computed by CMake
 first_pkg_BINARY_DIR:STATIC=/home/seif/My_ROS/ROS/catkin_ws/build/first_pkg
 
-//The directory containing a CMake configuration file for first_pkg.
-first_pkg_DIR:PATH=/home/seif/My_ROS/ROS/catkin_ws/devel/share/first_pkg/cmake
+first_pkg_DIR:PATH=
 
 //Value Computed by CMake
 first_pkg_SOURCE_DIR:STATIC=/home/seif/My_ROS/ROS/catkin_ws/src/first_pkg
@@ -672,7 +671,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=6
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
