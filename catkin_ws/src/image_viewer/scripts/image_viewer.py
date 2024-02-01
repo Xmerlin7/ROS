@@ -8,7 +8,7 @@ import sys
 bridge = CvBridge()
 
 def main(args):
-    rospy.init_node('image_converter', anonymous=True)
+    rospy.init_node('image_viewer', anonymous=True)
     image_sub = rospy.Subscriber("/usb_cam/image_raw", Image, image_callback)
 
     try:
