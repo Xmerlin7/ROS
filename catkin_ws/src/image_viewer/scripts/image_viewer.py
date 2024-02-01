@@ -9,7 +9,12 @@ bridge = CvBridge()
 
 def image_callback(ros_image):
     print("got an image")
-    global 
+    global bridge
+
+    try:
+        cv_image = bridge.imgmsg_to_cv2(ros_image, 'bgr8')
+    except CvBridgeError as e:
+        print(e)
 
 def main(args):
     rospy.init_node('image_viewer', anonymous=True)
