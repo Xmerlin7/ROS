@@ -7,3 +7,4 @@
 subdirs("gtest")
 subdirs("first_pkg")
 subdirs("pioneer_visualize")
+subdirs("image_viewer")

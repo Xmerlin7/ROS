@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
-messages_str = "/home/seif/My_ROS/ROS/catkin_ws/src/first_pkg/msg/V2V.msg;/home/seif/My_ROS/ROS/catkin_ws/src/first_pkg/msg/V2V.msg"
+messages_str = "/home/seif/My_ROS/ROS/catkin_ws/src/first_pkg/msg/V2V.msg"
 services_str = ""
 pkg_name = "first_pkg"
 dependencies_str = "std_msgs;geometry_msgs"
