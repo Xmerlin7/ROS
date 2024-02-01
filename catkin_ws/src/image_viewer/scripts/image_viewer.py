@@ -5,6 +5,7 @@ from std_msgs.msg import String
 from sensor_msgs.msg import Image
 from cv_bridge import CvBridge, CvBridgeError
 import sys
+
 bridge = CvBridge()
 
 def image_callback(ros_image):
@@ -17,7 +18,7 @@ def image_callback(ros_image):
         print(e)
 #   From now you can use opencv commnads    
     cv2.imshow("image_viewer", cv_image)
-    cv2.waitKey(3)
+    #cv2.waitKey(3)
 
 def main(args):
     rospy.init_node('image_viewer', anonymous=True)
