@@ -2,10 +2,12 @@
 
 import rospy
 from std_msgs.msg import String
+from first_pkg.msg import V2V
 
 
 def talker():
     pub = rospy.Publisher('chatter', String, queue_size=10)
+    car_pub = rospy.Publisher('car_chn', V2V, queue_size=10)
     rospy.init_node('talker', anonymous=True)
     rate = rospy.Rate(10)
     while not rospy.is_shutdown():
