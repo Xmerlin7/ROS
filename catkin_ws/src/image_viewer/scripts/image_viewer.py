@@ -7,6 +7,10 @@ from cv_bridge import CvBridge, CvBridgeError
 import sys
 bridge = CvBridge()
 
+def image_callback(ros_image):
+    print("got an image")
+    global 
+
 def main(args):
     rospy.init_node('image_viewer', anonymous=True)
     image_sub = rospy.Subscriber("/usb_cam/image_raw", Image, image_callback)
