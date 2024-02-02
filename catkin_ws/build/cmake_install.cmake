@@ -132,6 +132,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/seif/My_ROS/ROS/catkin_ws/build/gtest/cmake_install.cmake")
   include("/home/seif/My_ROS/ROS/catkin_ws/build/first_pkg/cmake_install.cmake")
+  include("/home/seif/My_ROS/ROS/catkin_ws/build/my_first_service/cmake_install.cmake")
   include("/home/seif/My_ROS/ROS/catkin_ws/build/pioneer_visualize/cmake_install.cmake")
   include("/home/seif/My_ROS/ROS/catkin_ws/build/image_viewer/cmake_install.cmake")
 
