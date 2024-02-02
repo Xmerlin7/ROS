@@ -88,3 +88,11 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_first_service" TYPE FILE FILES "/home/seif/My_ROS/ROS/catkin_ws/src/my_first_service/package.xml")
 endif()
 
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/my_first_service" TYPE PROGRAM FILES "/home/seif/My_ROS/ROS/catkin_ws/build/my_first_service/catkin_generated/installspace/add_client.py")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/my_first_service" TYPE PROGRAM FILES "/home/seif/My_ROS/ROS/catkin_ws/build/my_first_service/catkin_generated/installspace/add_server.py")
+endif()
+
